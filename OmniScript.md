@@ -6,3 +6,7 @@
 
 This LWC has a small UI foot print with a simple button and behaves somewhat like a set values.  It is intended mostly as a base to start building from, but gives you enough hooks to use as examples.
 
+## [Flexi Button](OmniScriptLWCs/FlexiButton.md)
+
+This LWC shows how you can pass in custom parameters that affect how the button is rendered.
+
