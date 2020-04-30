@@ -10,7 +10,9 @@ If you have questions or comments, you are welcome to send them along to me.
 
 
 1. [OmniScript LWCs](OmniScript.md)
-2. 
+2. Card LWCs (TBD)
+3. Other LWCs (TBD)
+4. General Advice (TBD)
 
 ## Some Important Things to Note
 
