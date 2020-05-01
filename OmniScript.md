@@ -16,7 +16,7 @@ This LWC shows how you can pass in custom parameters that affect how the button 
 
 
 
-### [OS Charting](OmniScriptLWCs/osCharting)
+### [OS Charting](OmniScriptLWCs/OsCharting.md)
 
 This is a simple wrapper around ChartJS for inline charts in OmniScript.
 
