@@ -12,3 +12,11 @@ This LWC has a small UI foot print with a simple button and behaves somewhat lik
 
 This LWC shows how you can pass in custom parameters that affect how the button is rendered.
 
+## Charting
+
+
+
+### [OS Charting](OmniScriptLWCs/osCharting)
+
+This is a simple wrapper around ChartJS for inline charts in OmniScript.
+
