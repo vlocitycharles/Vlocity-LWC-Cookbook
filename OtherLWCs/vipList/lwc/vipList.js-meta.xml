@@ -4,18 +4,17 @@
     <isExposed>true</isExposed>
     <targets>
         <target>lightning__RecordPage</target>
-        <target>lightning__HomePage</target>
-        <target>lightning__AppPage</target>
     </targets>
     <targetConfigs>
-        <targetConfig targets="lightning__RecordPage, lightning__HomePage, lightning__AppPage">
+        <targetConfig targets="lightning__RecordPage">
             <property name="ipname" type="String" label="Name of Integration Procedure to Call"/>
+            <property name="iconName" type="String" label="Icon to show in header (e.g., standard:account)"/>
+            <property name="listTitle" type="string" label="Title of list"/>
             <property name="pathToData" type="String" label="Path to Data in Result"/>
-            <property name="titles" type="String" label="Column Titles (comma separated)"/>
+            <property name="titles" type="String" label="Column Headers (comma separated)"/>
             <property name="names" type="String" label="Column Names in JSON Data"/>
-
-            <property name="prop1" type="String"/>
-            <property name="prop2" type="Boolean"/>
+            <property name="idField" type="String" label="Name of Record Id field in data (optional)"/>
+            <property name="linkField" type="String" label="Name of field in data to put hyperlink on (optional)"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

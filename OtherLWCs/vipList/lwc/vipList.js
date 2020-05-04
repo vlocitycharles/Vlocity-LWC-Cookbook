@@ -1,17 +1,19 @@
 import { LightningElement, api, track } from 'lwc';
+import { NavigationMixin } from 'lightning/navigation';
 
 import callIP from '@salesforce/apex/ipLWCWrapper.callIP';
 
 
-export default class IpLister extends LightningElement {
+export default class VipList extends NavigationMixin(LightningElement) {
 	@api pathToData ="";
 	@api recordId;
 	@api titles = "";
 	@api names = "";
 	@api ipname = "";
-
-	@api prop1;
-	@api prop2;
+	@api iconName = "standard:lead_list";
+	@api listTitle = "";
+	@api idField = "";
+	@api linkField = "";
 
 	@track ipResult = '';
 	@track rows = [];
@@ -56,8 +58,13 @@ export default class IpLister extends LightningElement {
 				let rowdata = [];
 				arrayNames.forEach((k,j) => {
 					k = k.trim();
+					let isLinkField = (k === this.linkField);
+					let linkId = "";
+					if (this.idField !== "") {
+						linkId = row[this.idField];
+					}
 					// console.log("key: " + k + ", value: "+row[k]);
-					rowdata.push({key : j, value: row[k]});
+					rowdata.push({key : j, value: row[k], linkfield: isLinkField, linkid: linkId});
 				});
 				this.rows.push({ key: i, value: rowdata});
 			});
@@ -67,4 +74,17 @@ export default class IpLister extends LightningElement {
 			console.log(this.ipResult);
 		})
 	}
+
+	clicky(event) {
+		console.log('Click!');
+		console.log(event.target.name);
+
+		this[NavigationMixin.Navigate]({
+            type: 'standard__recordPage',
+            attributes: {
+                recordId: event.target.name,
+                actionName: 'view',
+            },
+        });
+    }
 }

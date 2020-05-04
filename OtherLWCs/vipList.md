@@ -1,4 +1,4 @@
-# ipLister
+# vipList
 
 Display the results of calling a Vlocity Integration Procedure in a table.
 
