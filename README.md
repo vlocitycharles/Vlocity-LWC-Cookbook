@@ -16,5 +16,7 @@ If you have questions or comments, you are welcome to send them along to me.
 
 ## Some Important Things to Note
 
-1. The namespace used in these examples may not be right for you.  Inspect both the .js and .js-meta.xml files to change the name space to the one that's appropriate for you.
+1. These are a collection of samples, not production ready code.  And they may change, including in a breaking fashion.  Take a copy, modify it, and it's yours.
+2. There is no support for these. Pull requests always welcome, however.
+3. The namespace used in these examples may not be right for you.  Inspect both the .js and .js-meta.xml files to change the name space to the one that's appropriate for you.
 
