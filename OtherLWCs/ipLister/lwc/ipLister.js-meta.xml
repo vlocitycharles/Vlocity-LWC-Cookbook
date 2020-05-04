@@ -4,15 +4,18 @@
     <isExposed>true</isExposed>
     <targets>
         <target>lightning__RecordPage</target>
-        <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
+        <target>lightning__AppPage</target>
     </targets>
     <targetConfigs>
-        <targetConfig targets="lightning__RecordPage">
-            <property name="prop1" type="String" />
-        </targetConfig>
-        <targetConfig targets="lightning__AppPage, lightning__HomePage">
-            <property name="prop2" type="Boolean" />
+        <targetConfig targets="lightning__RecordPage, lightning__HomePage, lightning__AppPage">
+            <property name="ipname" type="String" label="Name of Integration Procedure to Call"/>
+            <property name="pathToData" type="String" label="Path to Data in Result"/>
+            <property name="titles" type="String" label="Column Titles (comma separated)"/>
+            <property name="names" type="String" label="Column Names in JSON Data"/>
+
+            <property name="prop1" type="String"/>
+            <property name="prop2" type="Boolean"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

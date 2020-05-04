@@ -1,5 +1,20 @@
 <template>
-	<h1>Hello World.  Record id is {recordId}</h1>
-	<h2>IP Result:</h2>
-	<p>{ipResult}</p>
+    <table class="table slds-table slds-table--bordered slds-table--cell-buffer" style="table-layout: auto;">
+		<thead>
+		   <tr class="slds-line-height_reset">
+			<template for:each={headers} for:item="header">
+			  <th key={header.key}>{header.value}</th>
+			</template>
+		  </tr>
+		</thead>
+		<tbody>
+			<template for:each={rows} for:item="row">
+				<tr key={row.key}>
+					<template for:each={row.value} for:item="col">
+						<td key={col.key}>{col.value}</td>
+					</template>
+				</tr>
+			</template>
+		</tbody>
+	</table>
 </template>
