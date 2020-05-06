@@ -24,7 +24,7 @@ This is a simple wrapper around ChartJS for inline charts in OmniScript.
 
 ## Publish and Subscribe
 
-###[PubSub](OmniScriptLWCs/PubSub.md)
+### [PubSub](OmniScriptLWCs/PubSub.md)
 
 This is a simple demonstration of publish (click a button to publish the time) and subscribe (a label that updates with the published time).  It's simple, but demonstrates all of the mechanics involved.
 
