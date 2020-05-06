@@ -12,11 +12,19 @@ This LWC has a small UI foot print with a simple button and behaves somewhat lik
 
 This LWC shows how you can pass in custom parameters that affect how the button is rendered.
 
+
+
 ## Charting
-
-
 
 ### [OS Charting](OmniScriptLWCs/OsCharting.md)
 
 This is a simple wrapper around ChartJS for inline charts in OmniScript.
+
+
+
+## Publish and Subscribe
+
+PubSub
+
+This is a simple demonstration of publish (click a button to publish the time) and subscribe (a label that updates with the published time).  It's simple, but demonstrates all of the mechanics involved.
 
