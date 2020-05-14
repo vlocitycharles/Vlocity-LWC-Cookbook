@@ -1,4 +1,26 @@
 <template>
-    <h1>{header1}</h1>
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <span
+            class="slds-icon_container slds-icon-standard-account"
+            title="account"
+          >
+            <lightning-icon icon-name={icon_name} size="medium"></lightning-icon>
+          </span>
+        </div>
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <span>{title}</span>
+          </h2>
+        </div>
+      </header>
+    </div>
+
+    <div class="slds-card__body slds-card__body_inner">
+
     <div class="chart slds-m-around_medium" lwc:dom="manual"></div>
+    </div>
+  </article>
 </template>

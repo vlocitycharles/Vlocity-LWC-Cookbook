@@ -14,17 +14,16 @@ The LWC is driven by custom parameters:
 
 The field label is displayed above the chart, and the rest of the parameters are passed as custom properties.  The following properties are available:
 
-| Parameter | Usage                                                        |
-| --------- | ------------------------------------------------------------ |
-| ChartType | One of line, bar, radar, doughnut, pie, polarArea, bubble, scatter |
-| Title     | The title to display for the chart                           |
-| Options   | A compelte set of options for ChartJS.  This is pretty complicated, and in the future I'll try to provide finer grained control. |
-| Labels    | An array of labels to display                                |
-| Data      | The name of the element which holds the data to chart        |
+| Parameter     | Usage                                                        |
+| ------------- | ------------------------------------------------------------ |
+| ChartType     | One of line, bar, radar, doughnut, pie, polarArea, bubble, scatt |
+| Options       | A compelte set of options for ChartJS.  This is pretty complicated, and in the future I'll try to provide finer grained control. |
+| Labels        | A %element-name% that points to the source of the elements   |
+| LabelElement  | If Labels is an array of objects, the element in the objects with the label |
+| Source        | The %name% of the element which holds the data to chart      |
+| SourceElement | If the source is an array of objects, the element in the objects that holds the numerical data. |
 
-In this version, there's an interesting wrinkle to the way the parameters work.  The Data parameter (note that the names of parameters are case-insensitive) contains the name of where to look for the data; there is no option for passing literal data.  In other places (e.g., labels), the data is either hard coded literal or uses the %% notation to reference a top-level element.
-
-In the example shown above, I used a set values to stage the data for the chart.  Because the data is complex, it was edited in JSON rather the properties sheet:
+In the above screenshots, data that had been returned from an Integration Procedure is being charted.  You can see how "Services" is structured as an array of objects, and each object has an "annualPremium" element with the column data and "policyType" with the label:
 
 ![oscharting03](../images/oscharting03.png)
 
