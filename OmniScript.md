@@ -14,6 +14,12 @@ This LWC shows how you can pass in custom parameters that affect how the button 
 
 
 
+## Data Display
+
+### [OS Table](OmniScriptLWCs/OsTable.md)
+
+Displays data in a tabular format in an OmniScript.
+
 ## Charting
 
 ### [OS Charting](OmniScriptLWCs/OsCharting.md)
