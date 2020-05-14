@@ -22,6 +22,7 @@ The field label is displayed above the chart, and the rest of the parameters are
 | LabelElement  | If Labels is an array of objects, the element in the objects with the label |
 | Source        | The %name% of the element which holds the data to chart      |
 | SourceElement | If the source is an array of objects, the element in the objects that holds the numerical data. |
+| IconName      | Defaults to custom:custom102, which is a SLDS icon that looks like a bar chart |
 
 In the above screenshots, data that had been returned from an Integration Procedure is being charted.  You can see how "Services" is structured as an array of objects, and each object has an "annualPremium" element with the column data and "policyType" with the label:
 

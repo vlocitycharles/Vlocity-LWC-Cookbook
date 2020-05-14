@@ -266,6 +266,11 @@ export default class OsCharting extends OmniscriptBaseMixin(LightningElement) {
                 this.logger(2,"Label Element: " + val.source);
             }
 
+            if (val.name.toUpperCase() === 'ICONNAME') {
+                this.icon_name = val.source;
+                this.logger(2,"ICon Name: " + val.source);
+            }
+
             if (val.name.toUpperCase() ==='DEBUG') {
                 // eslint-disable-next-line radix
                 this.debug_level = Math.max(this.debug_level, parseInt(val.source));    // Highest level wins
